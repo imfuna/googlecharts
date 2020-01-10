@@ -12,7 +12,8 @@ class Gchart
 
   def self.url(use_ssl = false)
     if use_ssl
-      'https://chart.googleapis.com/chart?'
+      'https://chart.apis.google.com/chart?'
+      # 'https://chart.googleapis.com/chart?'
     else
       'https://chart.apis.google.com/chart?'
     end
@@ -88,7 +89,7 @@ class Gchart
     @grouped = false
     @overlapped = false
 
-    @use_ssl = false
+    @use_ssl = true
     @encoding = 'simple'
     # @max_value = 'auto'
     # @min_value defaults to nil meaning zero
