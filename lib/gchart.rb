@@ -14,7 +14,7 @@ class Gchart
     if use_ssl
       'https://chart.googleapis.com/chart?'
     else
-      'http://chart.apis.google.com/chart?'
+      'https://chart.apis.google.com/chart?'
     end
   end
 
